@@ -1,6 +1,5 @@
 # Gestion d'Hôtel API
 
-Ce projet est une API pour la gestion d'hôtels, construite avec Node.js, Express et MongoDB. Il permet de gérer les opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) sur les hôtels, ainsi que le téléchargement et la gestion des images associées.
 
 ## Structure du Projet
 
@@ -53,7 +52,8 @@ gestion-hotel-api
 
 ## Gestion des Images
 
-Pour gérer les images des hôtels, ce projet utilise le middleware `multer`. Les images uploadées seront stockées dans le dossier `uploads`.
+La gestion des images des hôtels utilise désormais Cloudinary pour le stockage des fichiers. Lorsqu'une image est uploadée via l'API, elle est envoyée directement sur Cloudinary et n'est plus stockée localement dans le dossier `uploads`. Assurez-vous de configurer vos identifiants Cloudinary dans les variables d'environnement du projet.
+
 
 ## Lien avec le Frontend Angular
 
@@ -65,4 +65,4 @@ Pour lier cette API à un frontend Angular, utilisez le service `HttpClient` d'A
 
 ## License
 
-Ce projet est sous licence MIT.
+Ce projet est sous licence Bakeli Work.
